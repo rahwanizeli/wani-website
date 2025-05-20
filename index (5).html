@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rhwanyrzl</title>
+<link rel="icon" type="icon" href="gambau/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background-image: url('gambau/batik.jpeg');
+}
+
+body, html{
+  height: 100%;
+  margin: 0;
+  font-family: bermuda;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #df6175; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 30px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 30px 30px;
+  background-color: inherit;
+  font-family: bermuda;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #e5ada8;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #e5ada8;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, td, th {
+  border: 5px solid #cca250;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  padding: 8px;
+}
+
+th, td {
+  background-color: #c81838;
+}
+</style>
+</head>
+<body>
+	<!-- Header -->
+	<div id="header">
+		<img src="gambau/banner.png" alt="Banner" width= "1340" height="240" />
+	</div>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Me <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="aboutme.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="interest.html">Interest</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">SocMeds <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="https://www.instagram.com/rhwnyrzl/">Intagram</a>
+      <a href="https://x.com/rhwanyrz1?s=11">X</a>
+      <a href="https://www.tiktok.com/@rhwany_?_t=ZS-8wOrFfT8ud6">TikTok</a>
+    </div>
+  </div>
+  <a href="contact.html">Contact</a>
+  <a href="gallery.html">Gallery</a>
+    </div>
+
+<h2 style="font-family: lucida handwriting; text-align:center; color: black; background-color:#f1ece2; font-size:50px;">My Contacts</h2>
+  <p style="font-family: lucida handwriting; text-align:center; font-size:40px; color:black; background-color:#f1ece2;"> Get in touch, or swing by for a cup of coffee. </p>
+
+<table>
+  <tr>
+    <th>Phone Number</th>
+    <td>60+ 1169778065</td>
+  </tr>
+  <tr>
+    <th>E-mail</th>
+    <td>rahwanirzl8@gmail.com</td>
+  </tr>
+  <tr>
+    <th>Letter Address</th>
+    <td>NO 1, JLN PRI 8, TAMAN PAYA RUMPUT INDAH, 76450, MELAKA</td>
+</table>
+
+	<!-- Disclaimer -->
+  <div id="footer">
+  <p style="font family: sans serif; text-align:center; font-size:30px;">&copy; 2025 RAHWANI. Recommended browser: Chrome, resolution 1920x1080. Last updated: May 21, 2025.</p>
+
+<div id="clock" style="text-align:center; font-size:40px; margin-top:10px;"></div>
+
+<script type="text/javascript">
+function updateClock() {
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+  if (minutes < 10) { minutes = "0" + minutes; }
+  if (seconds < 10) { seconds = "0" + seconds; }
+  var timeString = hours + ":" + minutes + ":" + seconds;
+  document.getElementById('clock').innerHTML = "Current Time: " + timeString;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+
+
+</div>
+
+</body>
+</html>
