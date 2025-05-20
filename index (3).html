@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rhwanyrzl</title>
+<link rel="icon" type="icon" href="gambau/favicon.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body, html{
+  height: 100%;
+  margin: 0;
+  font-family: bermuda;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #df6175; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 30px;
+  font-family:bermuda;
+  color: white;
+  text-align: center;
+  padding: 30px 30px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 30px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 30px 30px;
+  background-color: inherit;
+  font-family: bermuda;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #e5ada8;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: #e5ada8;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+body {
+background-image: url('gambau/batik.jpeg');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+body {
+  margin: 0;
+  font-family: Papyrus;
+}
+
+.header {
+  text-align: center;
+  font-family: courier new;
+  font-size: 30px;
+  background-color: #b3405a;
+  color: white;
+  padding: 16px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+	<!-- Header -->
+	<div id="header">
+		<img src="gambau/banner.png" alt="Banner" width= "1340" height="240" />
+	</div>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Me <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="aboutme.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="interest.html">Interest</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">SocMeds <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="https://www.instagram.com/rhwnyrzl/">Intagram</a>
+      <a href="https://x.com/rhwanyrz1?s=11">X</a>
+      <a href="https://www.tiktok.com/@rhwany_?_t=ZS-8wOrFfT8ud6">TikTok</a>
+    </div>
+  </div>
+  <a href="contact.html">Contact</a>
+  <a href="gallery.html">Gallery</a>
+    </div>
+
+<div id="Interest" class="navcontent">
+
+<!-- Header -->
+<div class="header">
+  <h1>I'm interested in . . .</h1>
+</div>
+
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+<div class="container">
+    <img src="gambau/coffee.jpeg" style="width:100%">
+    <div class="overlay">Coffee</div>
+</div>
+<div class="container">
+    <img src="gambau/waterfall.jpg" style="width:100%">
+    <div class="overlay">Explore Nature</div>
+   </div>
+</div>
+
+  <div class="column">
+<div class="container">
+    <img src="gambau/mi.jpeg" style="width:100%">
+    <div class="overlay">Mi Tarik</div>
+</div>
+<div class="container">
+    <img src="gambau/sunset.jpg" style="width:100%">
+    <div class="overlay">Sunset at the Beach</div>
+  </div>
+</div>
+
+  <div class"column">
+  <div class="container">
+    <img src="gambau/hiking.jpg" style="width:100%">
+    <div class="overlay">Hiking</div>
+</div>
+  <div class="container">
+    <img src="gambau/bunga.jpeg" style="width:100%">
+    <div class="overlay">Flower Bouquet</div>
+  </div>
+</div>
+
+  <div class="column">
+  <div class="container">
+    <img src="gambau/netflix.jpeg" style="width:100%">
+    <div class="overlay">K-drama on Netflix</div>
+</div>
+  <div class="container">
+    <img src="gambau/tangkap.jpg" style="width:100%">
+    <div class="overlay">Taking Photos</div>
+  </div>  
+</div>
+
+
+
+	<!-- Disclaimer -->
+  <div id="footer">
+  <p style="font family: sans serif; text-align:center; font-size:30px;">&copy; 2025 RAHWANI. Recommended browser: Chrome, resolution 1920x1080. Last updated: May 21, 2025.</p>
+
+<div id="clock" style="text-align:center; font-size:40px; margin-top:10px;"></div>
+
+<script type="text/javascript">
+function updateClock() {
+  var now = new Date();
+  var hours = now.getHours();
+  var minutes = now.getMinutes();
+  var seconds = now.getSeconds();
+  if (minutes < 10) { minutes = "0" + minutes; }
+  if (seconds < 10) { seconds = "0" + seconds; }
+  var timeString = hours + ":" + minutes + ":" + seconds;
+  document.getElementById('clock').innerHTML = "Current Time: " + timeString;
+}
+setInterval(updateClock, 1000);
+updateClock();
+</script>
+
+
+</div>
+
+</body>
+</html>
